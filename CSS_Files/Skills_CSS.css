@@ -1,0 +1,79 @@
+#S3_Skills {
+    top: 1000px;
+    padding: 80px 20px;
+    background-color: #0b000d;
+    color: #fff;
+    text-align: center;
+}
+
+#skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    color: #000;
+}
+
+.skills-title {
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: #f1c40f; /* Yellow text */
+    position: relative;
+}
+
+.skills-title::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #f1c40f; /* Yellow underline */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.skill-card {
+    background: rgba(256, 256, 256, 0.7);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.11); /* Slight dark shadow */
+    transition: transform 0.3s ease-in-out;
+    color: #000; /* Black text inside the card */
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+}
+
+.skill-icon {
+    font-size: 3rem;
+    color: #f1c40f; /* Yellow icons */
+    margin-bottom: 15px;
+}
+
+.skill-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #000; /* Black text for skill name */
+}
+
+.skill-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #000; /* Black text for description */
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #333; /* Dark background for skill bar */
+    border-radius: 10px;
+    overflow: hidden;
+    height: 15px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #f1c40f; /* Yellow progress */
+    transition: width 1s ease-in-out;
+}

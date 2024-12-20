@@ -1,0 +1,51 @@
+#S5_Tool {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0b000d;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px;
+}
+
+#tools-track {
+    display: flex;
+    width: max-content;
+    animation: scroll 3s infinite linear;
+}
+
+.tool-item {
+    display: inline-block;
+    background: rgba(256, 256, 256, 0.7);
+    padding: 10px 10px;
+    margin: 0 3vw;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* Slight dark shadow */
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    white-space: nowrap;
+    color: #000; /* Black text for tool items */
+    transition: transform 0.3s ease;
+}
+
+.tool-item img {
+    width: 50px;
+    height: auto;
+}
+
+.tool-item:hover {
+    transform: scale(1.1);
+    background: rgba(241, 196, 15, 0.7); /* Yellow background on hover */
+    color: #0b000d; /* Dark text on hover */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-10%);
+    }
+}

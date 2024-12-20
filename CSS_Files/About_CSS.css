@@ -1,0 +1,130 @@
+/* About Section Styling */
+#S1_About {
+    padding: 100px 20px;
+    background: #0b000d; /* Black background */
+    text-align: center;
+    position: relative;
+}
+
+#about_txt {
+    font-size: 2rem;
+    color: yellow; /* Yellow for the main text */
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    font-family: "Lexend Zetta", sans-serif;
+}
+
+#about_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#about_text {
+    flex: 1;
+    max-width: 50%;
+}
+
+#about1 {
+    font-family: Arial;
+    font-size: 1rem;
+    color: darkgray; /* Dark gray for the paragraph text */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+#cvrec {
+    background-color: yellow; /* Yellow background */
+    color: black; /* Black text */
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#cvrec:hover {
+    background-color: black; /* Black background on hover */
+    color: white; /* White text on hover */
+}
+
+#about_image {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    border-radius: 25px;
+    border: 3px solid yellow; /* Yellow border */
+    padding: 3vw;
+}
+
+@media (max-width: 1024px) {
+    #about_txt {
+        font-size: 2.5rem;
+    }
+    #about1 {
+        font-size: 1.1rem;
+    }
+    #about_image {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    #about_content {
+        flex-direction: column;
+    }
+    #about_text, #about_image {
+        max-width: 100%;
+    }
+    #about1 {
+        font-size: 1rem;
+    }
+    #about_txt {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    #about_txt {
+        font-size: 1.8rem;
+    }
+    #about1 {
+        font-size: 0.95rem;
+    }
+    #cvrec {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    #about_txt {
+        font-size: 1.6rem;
+    }
+    #about1 {
+        font-size: 0.9rem;
+    }
+    #cvrec {
+        font-size: 0.9rem;
+        padding: 7px 18px;
+    }
+}
+
+@media (max-width: 320px) {
+    #about_txt {
+        font-size: 1.4rem;
+    }
+    #about1 {
+        font-size: 0.85rem;
+    }
+    #cvrec {
+        font-size: 0.8rem;
+        padding: 6px 15px;
+    }
+}
