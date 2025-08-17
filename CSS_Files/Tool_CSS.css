@@ -35,7 +35,12 @@
     height: auto;
 }
 
+/*
+hover ekk kiynne miuse ek arn gyhm wns wnw
+*/
+
 .tool-item:hover {
+
     transform: scale(1.1);
     background: rgba(241, 196, 15, 0.7); /* Yellow background on hover */
     color: #0b000d; /* Dark text on hover */
