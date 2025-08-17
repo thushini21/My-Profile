@@ -7,7 +7,7 @@
 }
 
 #about_txt {
-    font-size: 2rem;
+    font-size: 3rem;
     color: yellow; /* Yellow for the main text */
     margin-bottom: 10vw;
     margin-top: 10vw;
@@ -31,7 +31,7 @@
 
 #about1 {
     font-family: Arial;
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: darkgray; /* Dark gray for the paragraph text */
     line-height: 1.8;
     margin-bottom: 20px;
