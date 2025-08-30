@@ -26,6 +26,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="CSS_Files/Hero_CSS.css">
   <link rel="stylesheet" href="CSS_Files/About_CSS.css">
@@ -97,20 +101,21 @@
 <!-- Service Section -->
 <section id="S2_Service">
   <h2 class="section-title">My Services</h2>
-  <div class="service-container"data-aos="zoom-in">
+  <div class="service-container" data-aos="zoom-in">
+
+    <!-- Web Development -->
     <div class="service-card content-inner">
       <div class="content-front cf-inner">
         <div class="inner">
+          <div class="dec-icon"><i class="fa fa-laptop"></i></div>
           <h2>Professional Web Solutions</h2>
-          <div class="dec-icon">
-            <i class="fa fa-laptop"></i>
-          </div>
         </div>
       </div>
       <div class="content-back cf-inner">
         <div class="inner">
           <h2>Web Development</h2>
           <ul>
+            <li>JAVA</li>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -122,15 +127,13 @@
       </div>
     </div>
 
+    <!-- Mobile Apps -->
     <div class="service-card content-inner">
       <div class="content-front cf-inner">
         <div class="inner">
+          <div class="dec-icon"><i class="fa fa-mobile"></i></div>
           <h2>Powerful Mobile Applications</h2>
-          <div class="dec-icon">
-            <i class="fa fa-mobile"></i>
-          </div>
         </div>
-
       </div>
       <div class="content-back cf-inner">
         <div class="inner">
@@ -140,45 +143,52 @@
             <li>Android</li>
           </ul>
           <div class="serv-price-wrap">
-            <span>"Creating engaging and efficient mobile applications"</span>
+            <span>"Creating engaging and efficient mobile applications to clients"</span>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- UI/UX Design -->
     <div class="service-card content-inner">
       <div class="content-front cf-inner">
         <div class="inner">
-          <h2>Stunning UI/UX<br> Solutions</h2>
-          <div class="dec-icon">
-            <i class="fa fa-paint-brush"></i>
-          </div>
+          <div class="dec-icon"><i class="fa fa-paint-brush"></i></div>
+          <h2>UI/UX Solutions</h2>
         </div>
       </div>
       <div class="content-back cf-inner">
         <div class="inner">
-          <h2>UI/UX Design</h2>
+          <h2>UI/UX Designing</h2>
           <ul>
             <li>Figma</li>
             <li>Adobe XD</li>
           </ul>
           <div class="serv-price-wrap">
-            <span>"Designing user-friendly and attractive interfaces"</span>
+            <span>"Designing user-friendly and attractive interfaces for various web applications"</span>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- Skills Section -->
+
+
 <section id="S3_Skills">
   <h2 class="section-title">Skills</h2>
-  <div id="skills-container" >
+  <div id="skills-container">
     <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-html5"></i>
+      <div class="skill-icon"><i class="fab fa-figma"></i></div>
+      <h3>Figma</h3>
+      <p>Experience designing UI/UX prototypes and wireframes using Figma.</p>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 85%;"></div>
       </div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-html5"></i></div>
       <h3>HTML</h3>
       <p>Advanced knowledge in HTML, including semantic markup and accessibility best practices.</p>
       <div class="skill-bar">
@@ -186,9 +196,7 @@
       </div>
     </div>
     <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-css3-alt"></i>
-      </div>
+      <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
       <h3>CSS</h3>
       <p>Proficient in CSS3, Flexbox, Grid, and modern responsive design techniques.</p>
       <div class="skill-bar">
@@ -196,9 +204,7 @@
       </div>
     </div>
     <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-js-square"></i>
-      </div>
+      <div class="skill-icon"><i class="fab fa-js-square"></i></div>
       <h3>JavaScript</h3>
       <p>Good experience in JavaScript, ES6+, DOM manipulation, and basic animations.</p>
       <div class="skill-bar">
@@ -206,15 +212,23 @@
       </div>
     </div>
     <div class="skill-card">
-      <div class="skill-icon">
-        <i class="fab fa-figma"></i>
-      </div>
-      <h3>Figma</h3>
-      <p>Experience designing UI/UX prototypes and wireframes using Figma.</p>
+      <div class="skill-icon"><i class="devicon-java-plain"></i></div>
+      <h3>Java</h3>
+      <p>Java is a high-level, object-oriented programming language used to build applications for computers, mobile devices, and the web.</p>
       <div class="skill-bar">
         <div class="skill-level" style="width: 85%;"></div>
       </div>
     </div>
+
+<!--    <div class="skill-card">-->
+<!--      <div class="skill-icon"><img src="springboot-logo.png" alt="Spring Boot" style="width:32px;"></div>-->
+<!--      <h3>SpringBoot</h3>-->
+<!--      <p>Spring Boot is a framework for building Java-based web applications quickly, with minimal configuration and built-in tools for creating standalone, production-ready apps.</p>-->
+<!--      <div class="skill-bar">-->
+<!--        <div class="skill-level" style="width: 85%;"></div>-->
+<!--      </div>-->
+<!--    </div>-->
+
   </div>
 </section>
 
@@ -649,6 +663,12 @@
         card.style.transition = 'opacity 1s';
       }, index * 200); // Stagger the animation for each card
     });
+  });
+
+    // Initialize AOS
+  AOS.init({
+    duration: 1200, // animation duration in ms
+    once: true,     // whether animation should happen only once while scrolling down
   });
 
 
