@@ -1,6 +1,6 @@
-#S2_Service {
+#S2_Service{
     padding: 50px 0;
-    background: black; /* Black background for the section */
+    background: rgba(9, 8, 8, 0.94);
     background-size: cover;
     position: relative;
     z-index: 1;
@@ -10,10 +10,11 @@
 .section-title {
     text-align: center;
     font-size: 2rem;
-    color: yellow; /* Yellow for the title text */
+    color: #fff;
     margin-bottom: 10vw;
     margin-top: 5vw;
     font-family: "Lexend Zetta", sans-serif;
+    color: darkgray;
 }
 
 .service-container {
@@ -25,10 +26,11 @@
     z-index: 2;
     align-items: center;
     padding: 5vw;
-    background: rgba(255, 255, 0, 0.05); /* Light yellow tint */
+    background: rgba(256, 256, 256,0.01);
     margin: 10px 100px;
-    box-shadow: 0 4px 20px rgba(255, 255, 0, 0.1);
+    box-shadow: 0 4px 20px rgba(256, 256, 256, 0.1);
     border-radius: 20px;
+
 }
 
 .service-card {
@@ -39,13 +41,12 @@
     transition: transform 1s;
     perspective: 1000px;
     margin-bottom: 3vw;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Black shadow for cards */
+
 }
 
 .service-card:hover {
     transform: rotateY(180deg);
 }
-
 .content-inner .content-front,
 .content-inner .content-back {
     position: absolute;
@@ -64,20 +65,20 @@
 
 .content-inner .content-back {
     transform: rotateY(180deg);
-    background: linear-gradient(to bottom right, yellow, black); /* Yellow and black gradient for the back */
+    background: linear-gradient(to bottom right, #0a0909, #050505);
 }
 
 .cf-inner .inner {
     transform: translateZ(90px);
     text-align: center;
     position: relative;
-    color: yellow; /* Yellow text for content */
+    color: #fff;
 }
 
 .content-inner .cf-inner .inner h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: yellow; /* Yellow for headings */
+    color: #d3aa0f;
 }
 
 .content-inner .cf-inner .inner ul {
@@ -87,78 +88,120 @@
 
 .content-inner .cf-inner .inner ul li {
     font-size: 0.9rem;
-    color: white; /* White for better readability */
+    color: #b0ac13;
     letter-spacing: 2px;
     margin: 5px 0;
 }
 
 .dec-icon {
     font-size: 4rem;
-    color: yellow; /* Yellow for icons */
+    color: #fff;
+}
+
+.service-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ffffff;
 }
 
 .content-front {
-    background: linear-gradient(to bottom right, black, #1a1a1a); /* Black gradient */
-    color: yellow; /* Yellow text */
+    background: linear-gradient(to bottom right, #110d11,black);
+
 }
 
 .content-inner:hover .content-front {
-    background-color: black;
-    color: yellow; /* Yellow on hover */
+    background-color: #cbbd29;
+    color: #ffffff;
 }
-
 .content-inner {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .content-inner:hover {
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 30px #cbbd29;
+}
+.content-inner {
+    transition: transform 0.8s ease-in-out, box-shadow 0.3s ease;
 }
 
 .content-front, .content-back {
     transition: background-color 0.6s ease, color 0.6s ease;
 }
 
-/* Responsive Styles */
+/* For screen sizes below 1440px */
 @media screen and (max-width: 1440px) {
     .service-container {
         margin: 25px 25px;
     }
+
+
+
 }
 
+/* For screen sizes below 1024px (Tablet Landscape) */
 @media screen and (max-width: 1024px) {
-    .section-title {
+    .service-container {
+        margin: 25px 25px;
+    }
+
+    .section-title{
         font-size: 2.5rem;
     }
+
+
+
 }
 
+/* For screen sizes below 768px (Tablet Portrait) */
 @media screen and (max-width: 768px) {
-    .section-title {
+    .service-container {
+        margin: 25px 25px;
+    }
+    .section-title{
         font-size: 2rem;
     }
+
 }
 
+/* For screen sizes below 425px (Mobile Landscape) */
 @media screen and (max-width: 425px) {
     .service-container {
         margin: 25px 25px;
         gap: 5px; /* Reduce gap between elements */
     }
-    .section-title {
+    .section-title{
         font-size: 1.8rem;
     }
+
+
 }
 
+/* For screen sizes below 375px (Mobile Portrait) */
 @media screen and (max-width: 375px) {
     .service-container {
+        margin: 25px 25px;
         gap: 10px;
     }
-    .section-title {
+    .section-title{
         font-size: 1.6rem;
     }
+
 }
 
+/* For screen sizes below 320px (Small Mobile) */
 @media screen and (max-width: 320px) {
-    .section-title {
+    .service-container {
+        margin: 25px 25px;
+        gap: 5px;
+    }
+    .section-title{
         font-size: 1.4rem;
     }
+
 }

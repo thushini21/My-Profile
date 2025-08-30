@@ -1,24 +1,15 @@
+/* ================= Skills Section ================= */
 #S3_Skills {
-    top: 1000px;
     padding: 80px 20px;
-    background-color: #0b000d;
+    background-color: #0b000d; /* Dark background */
     color: #fff;
     text-align: center;
-}
-
-#skills-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    color: #000;
 }
 
 .skills-title {
     font-size: 3rem;
     margin-bottom: 50px;
-    color: #f1c40f; /* Yellow text */
+    color: #f1c40f; /* Yellow title */
     position: relative;
 }
 
@@ -33,47 +24,80 @@
     transform: translateX(-50%);
 }
 
+#skills-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-items: center;
+}
+
+/* Skill Card */
 .skill-card {
-    background: rgba(256, 256, 256, 0.7);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white */
+    padding: 25px 20px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.11); /* Slight dark shadow */
-    transition: transform 0.3s ease-in-out;
-    color: #000; /* Black text inside the card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
 }
 
 .skill-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(241, 196, 15, 0.5); /* Glow effect */
 }
 
+/* Skill Icon */
 .skill-icon {
     font-size: 3rem;
     color: #f1c40f; /* Yellow icons */
     margin-bottom: 15px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
 
+/* Skill Title */
 .skill-card h3 {
     font-size: 1.8rem;
     margin-bottom: 10px;
-    color: #000; /* Black text for skill name */
+    color: #fff;
+    text-shadow: 0px 1px 2px rgba(0,0,0,0.4);
 }
 
+/* Skill Description */
 .skill-card p {
     font-size: 1rem;
     margin-bottom: 20px;
-    color: #000; /* Black text for description */
+    color: #ddd;
 }
 
+/* Skill Bar */
 .skill-bar {
     width: 100%;
-    background-color: #333; /* Dark background for skill bar */
+    height: 15px;
+    background-color: #333; /* Dark background */
     border-radius: 10px;
     overflow: hidden;
-    height: 15px;
 }
 
+/* Skill Level with animation */
 .skill-level {
     height: 100%;
-    background-color: #f1c40f; /* Yellow progress */
-    transition: width 1s ease-in-out;
+    width: 0; /* Start at 0 for animation */
+    background: linear-gradient(90deg, #f1c40f, #ffd700);
+    border-radius: 10px;
+    animation: fillSkill 1.5s forwards;
+}
+
+/* Keyframes for skill bar animation */
+@keyframes fillSkill {
+    from { width: 0; }
+    to { width: var(--skill-width); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #skills-container {
+        grid-template-columns: 1fr;
+    }
 }
